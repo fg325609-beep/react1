@@ -39,3 +39,6 @@ section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-left a {
 section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-right {
   width: 45%;
 }
+section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-right img {
+  width: 100%;
+}
