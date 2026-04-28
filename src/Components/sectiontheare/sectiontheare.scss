@@ -1,72 +1,84 @@
-.container{
-    .sectionthare{
-        flex-wrap: wrap;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 70px 0;
-        .left{
+.section-three { // HTMLdagi nom bilan bir xil bo'lishi shart
+  .container {
+    .section-wrapper {
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 70px 0;
+
+      .left {
         width: 45%;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        h1{
-            font-family: Playfair Display;
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 50px;
-            letter-spacing: 0%;
-            
+
+        h1 {
+          font-family: 'Playfair Display', serif;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 50px;
         }
-        p{
-            font-family: Mulish;
-            font-weight: 300;
-            font-size: 17px;
-            line-height: 30px;
-            letter-spacing: 0%;
+
+        p {
+          font-family: 'Mulish', sans-serif;
+          font-weight: 300;
+          font-size: 17px;
+          line-height: 30px;
         }
-        a{
-            font-family: Inter;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 60px;
-            letter-spacing: 0%;
-            vertical-align: middle;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: sandybrown;
-            width: 25%;
-            border-radius: 7px;
-            border: 1px solid sandybrown;
-            &:hover{
-                border: 1px solid sandybrown;
-                background: none;
-                color: black;
-                opacity: 0.5;
-            }
+
+        a {
+          font-family: 'Inter', sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          height: 60px; // line-height o'rniga balandlik
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: sandybrown;
+          width: 150px; // 25% o'rniga aniq o'lcham yaxshi ishlaydi
+          border-radius: 7px;
+          border: 1px solid sandybrown;
+          text-decoration: none;
+
+          &:hover {
+            background: transparent;
+            color: black;
+            opacity: 0.8;
+          }
         }
+      }
+
+      .right {
+        width: 45%;
+        img {
+          width: 100%; // Rasm divdan chiqib ketmasligi uchun
+          height: auto;
         }
-        .right{
-            width: 45%;
-        }
+      }
     }
+  }
 }
 
-@media(max-width:880px){
-    .sectionthare{
-        .left{
-            width: 100%;
-            text-align: center;
-            a{
-                width: 100%;
-            }
+// Media so'rovi
+@media (max-width: 880px) {
+  .section-three { 
+    .section-wrapper { // Klass iyerarxiyasini saqlang
+      flex-direction: column; 
+      text-align: center;
+
+      .left, .right {
+        width: 100%;
+      }
+
+      .left {
+        margin-bottom: 30px;
+        align-items: center; // Tugmani o'rtaga olish uchun
+        a {
+          width: 100%;
         }
-        .right{
-            width: 100%;
-        }
-        flex-wrap: wrap;
-        flex-direction: column;
+      }
     }
+  }
 }

@@ -1,69 +1,69 @@
-.container .sectionthare {
+.section-three .container .section-wrapper {
   flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 70px 0;
 }
-.container .sectionthare .left {
+.section-three .container .section-wrapper .left {
   width: 45%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.container .sectionthare .left h1 {
-  font-family: Playfair Display;
+.section-three .container .section-wrapper .left h1 {
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 50px;
-  letter-spacing: 0%;
 }
-.container .sectionthare .left p {
-  font-family: Mulish;
+.section-three .container .section-wrapper .left p {
+  font-family: "Mulish", sans-serif;
   font-weight: 300;
   font-size: 17px;
   line-height: 30px;
-  letter-spacing: 0%;
 }
-.container .sectionthare .left a {
-  font-family: Inter;
+.section-three .container .section-wrapper .left a {
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 16px;
-  line-height: 60px;
-  letter-spacing: 0%;
-  vertical-align: middle;
+  height: 60px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   background: sandybrown;
-  width: 25%;
+  width: 150px;
   border-radius: 7px;
   border: 1px solid sandybrown;
+  text-decoration: none;
 }
-.container .sectionthare .left a:hover {
-  border: 1px solid sandybrown;
-  background: none;
+.section-three .container .section-wrapper .left a:hover {
+  background: transparent;
   color: black;
-  opacity: 0.5;
+  opacity: 0.8;
 }
-.container .sectionthare .right {
+.section-three .container .section-wrapper .right {
   width: 45%;
+}
+.section-three .container .section-wrapper .right img {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 880px) {
-  .sectionthare .left {
-    width: 100%;
+  .section-three .section-wrapper {
+    flex-direction: column;
     text-align: center;
   }
-  .sectionthare .left a {
+  .section-three .section-wrapper .left, .section-three .section-wrapper .right {
     width: 100%;
   }
-  .sectionthare .right {
-    width: 100%;
+  .section-three .section-wrapper .left {
+    margin-bottom: 30px;
+    align-items: center;
   }
-  .sectionthare {
-    flex-wrap: wrap;
-    flex-direction: column;
+  .section-three .section-wrapper .left a {
+    width: 100%;
   }
 }
