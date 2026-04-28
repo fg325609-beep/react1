@@ -1,0 +1,52 @@
+.two .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+.two .container .title a {
+  color: sandybrown;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.two .container .title a:hover {
+  animation: moveLeftRight 0.8s ease-in-out infinite;
+}
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.two .container .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.two .container .cards .crad {
+  width: 20%;
+}
+.two .container .cards .crad img {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .title {
+    text-align: center;
+  }
+  .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .card img {
+    width: 100%;
+  }
+}

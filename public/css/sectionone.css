@@ -1,0 +1,68 @@
+.one .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.one .container .one-left {
+  width: 45%;
+}
+.one .container .one-left img {
+  width: 100%;
+}
+.one .container .one-right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.one .container .one-right h1 {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  letter-spacing: 0%;
+}
+.one .container .one-right p {
+  font-family: Mulish;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+.one .container .one-right a {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  background: rgb(251, 143, 29);
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid rgb(251, 143, 29);
+}
+.one .container .one-right a:hover {
+  background: none;
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 50px 0;
+    flex-direction: column-reverse;
+  }
+  .container .one-right {
+    width: 100%;
+  }
+  .container .one-right a {
+    width: 100%;
+  }
+  .container .one-left {
+    width: 100%;
+  }
+}

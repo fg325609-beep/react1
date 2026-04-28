@@ -1,0 +1,59 @@
+.two{
+    .container{
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 0;
+            flex-wrap: wrap;
+            a {
+  color: sandybrown;
+  text-decoration: none;
+  display: inline-flex; // Ikonka va matn bir qatorda bo'lishi uchun
+  align-items: center;
+  gap: 5px; // Matn va o'qcha orasidagi masofa
+
+  &:hover {
+    // Sichqoncha ustiga kelganda animatsiya ishga tushadi
+    animation: moveLeftRight 0.8s ease-in-out infinite;
+  }
+}
+
+// Animatsiya qoidalari
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px); // 8 piksel o'ngga suriladi
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+        }
+        .cards{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .crad{
+                width: 20%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .title{
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+}
