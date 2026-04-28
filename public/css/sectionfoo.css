@@ -35,10 +35,28 @@ section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-left a {
   font-size: 18px;
   line-height: 48px;
   letter-spacing: 0%;
+  color: black;
+  opacity: 0.5;
+}
+section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-left a:hover {
+  opacity: 1;
 }
 section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-right {
   width: 45%;
 }
 section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-right img {
   width: 100%;
+}
+
+@media (max-width: 666px) {
+  .sectionfoo-wrapper {
+    flex-direction: column;
+  }
+  .sectionfoo-wrapper .sectionfoo-left {
+    width: 100%;
+    text-align: center;
+  }
+  .sectionfoo-wrapper .sectionfoo-right {
+    width: 100%;
+  }
 }
