@@ -15,6 +15,9 @@ function Sectionfoo(){
                       <p>Edward Newgate</p>
                       <a href="">Founder Circle</a>
                     </div>
+                    <div className="sectionfoo-right">
+                        <img src="img/sectionfoo.png" alt="" />
+                    </div>
                 </div>
             </div>
         </section>
