@@ -26,4 +26,5 @@ function Sectionfoo(){
         </>
     )
 }
+
 export default Sectionfoo;
