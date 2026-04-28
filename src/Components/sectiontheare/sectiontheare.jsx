@@ -1,19 +1,19 @@
-import "./sectiontheare.scss";
 import React from 'react';
+import "./sectiontheare.scss"; // Fayl nomi ham to'g'ri bo'lishi kerak
 
-function Sectiontheare() {
+function SectionThree() {
     return (
-        <section className="section-three"> {/* Klas nomini aniqroq berdik */}
+        <section className="section-three">
             <div className="container">
-                <div className="section-wrapper"> {/* Iloji boricha 'theare' kabi xato so'zlardan qoching */}
+                <div className="section-wrapper">
                     <div className="left">
                         <h1>Guides by Thousand Sunny</h1>
-                        <p>Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
-                        <a href="#" className="download-btn">Download</a> {/* href bo'sh bo'lmasin */}
+                        <p>Packed with tips and advice from our on-the-ground experts...</p>
+                        <a href="#!" className="download-btn">Download</a> 
+                        {/* "#" o'rniga "#!" ishlatish sahifa sakrab ketishini oldini oladi */}
                     </div>
                     <div className="right">
-                        {/* Rasm borligiga va yo'li to'g'riligiga ishonch hosil qiling */}
-                        <img src="/img/sectiontheare.png" alt="City Guides App" />
+                        <img src="/img/sectionthree.png" alt="City Guides App" />
                     </div>
                 </div>
             </div>
@@ -21,4 +21,4 @@ function Sectiontheare() {
     );
 }
 
-export default Sectiontheare;
+export default SectionThree;
