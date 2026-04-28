@@ -13,6 +13,41 @@ section{
                     
                 }
             }
+            .sectionfoo-wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .sectionfoo-left{
+                    width: 45%;
+                    h1{
+                        font-family: Mulish;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 36px;
+                        letter-spacing: 0%;
+                        
+                    }
+                    p{
+                        font-family: Inter;
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 48px;
+                        letter-spacing: 0%;
+                        
+                    }
+                    a{
+                        font-family: Inter;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 48px;
+                        letter-spacing: 0%;
+                        
+                    }
+                }
+                .sectionfoo-right{
+                    width: 45%;
+                }
+            }
         }
     }
 }

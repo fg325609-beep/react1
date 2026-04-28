@@ -7,3 +7,35 @@ section .container .sectionfoo .title h1 {
   text-align: center;
   color: rgb(0, 0, 0);
 }
+section .container .sectionfoo .sectionfoo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-left {
+  width: 45%;
+}
+section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-left h1 {
+  font-family: Mulish;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0%;
+}
+section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-left p {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 48px;
+  letter-spacing: 0%;
+}
+section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-left a {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 48px;
+  letter-spacing: 0%;
+}
+section .container .sectionfoo .sectionfoo-wrapper .sectionfoo-right {
+  width: 45%;
+}
