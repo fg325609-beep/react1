@@ -1,12 +1,46 @@
-section{
-    .container{
-        .section-five{
-            .cards{
+section.five {
+    .container {
+        max-width: 1200px; // Konteyner markazda turishi uchun
+        margin: 0 auto;
+        padding: 0 15px;
+
+        .section-five {
+            .cards {
                 display: flex;
-                .card{
-                    width: 20%;
+                flex-wrap: wrap; // Kartalar pastga tushishi uchun
+                justify-content: space-between; // Kartalar orasidagi masofa
+                gap: 20px; // Kartalar orasidagi bo'shliq
+
+                .card {
+                    background: #fff;
+                    flex: 1 1 calc(25% - 20px); // Default: 4 ta karta (desktop)
+                    min-width: 250px; // Juda kichrayib ketmasligi uchun
+                    
+                    img {
+                        width: 100%; // Rasm karta kengligiga moslashadi
+                        height: auto;
+                    }
+
+                    h1 {
+                        font-size: 1.2rem;
+                        margin: 15px 0;
+                    }
                 }
             }
         }
+    }
+}
+
+/* --- Media Queries (Moslashuvchanlik) --- */
+
+@media (max-width: 1024px) {
+    section.five .section-five .cards .card {
+        flex: 1 1 calc(50% - 20px); // Planshetlarda 2 tadan karta
+    }
+}
+
+@media (max-width: 600px) {
+    section.five .section-five .cards .card {
+        flex: 1 1 100%; // Mobil qurilmalarda 1 tadan karta
     }
 }
