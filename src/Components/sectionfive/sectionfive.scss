@@ -1,7 +1,12 @@
 section{
     .container{
         .section-five{
-            
+            .cards{
+                display: flex;
+                .card{
+                    width: 20%;
+                }
+            }
         }
     }
 }
