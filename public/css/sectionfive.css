@@ -1,0 +1,52 @@
+section.five {
+  padding: 100px 0;
+}
+section.five .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+section.five .container .section-five .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+section.five .container .section-five .cards .card {
+  background: #fff;
+  flex: 1 1 calc(25% - 20px);
+  min-width: 250px;
+}
+section.five .container .section-five .cards .card img {
+  width: 100%;
+  height: auto;
+}
+section.five .container .section-five .cards .card h1 {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+section.five .container .section-five .cards .card a {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: black;
+  opacity: 0.5;
+}
+section.five .container .section-five .cards .card a:hover {
+  color: rgb(251, 143, 29);
+  opacity: 1;
+}
+
+/* --- Media Queries (Moslashuvchanlik) --- */
+@media (max-width: 1024px) {
+  section.five .section-five .cards .card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 600px) {
+  section.five .section-five .cards .card {
+    flex: 1 1 100%;
+  }
+}
