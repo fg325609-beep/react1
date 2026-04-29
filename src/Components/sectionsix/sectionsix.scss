@@ -1,0 +1,86 @@
+footer {
+    padding: 50px 0;
+    background-color: #f9f9f9; // Footer foni (ixtiyoriy)
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex: 1 1 200px; // Ustunlar kengligi (kamida 200px)
+
+            // Birinchi ustun (Logo va matn uchun)
+            &:first-child {
+                flex: 1 1 300px; // Logo qismi biroz kengroq
+                
+                img {
+                    margin-bottom: 20px;
+                }
+                
+                p {
+                    font-size: 14px;
+                    line-height: 1.6;
+                    color: #555;
+                    margin-bottom: 20px;
+                }
+            }
+
+            // Sarlavhalar (Har bir ul'ning birinchi li'si)
+            li:first-child a {
+                font-weight: bold;
+                color: #000;
+                font-size: 18px;
+                pointer-events: none; // Sarlavha bosilmaydigan bo'ladi
+            }
+
+            li {
+                margin-bottom: 12px;
+                
+                a {
+                    text-decoration: none;
+                    color: #666;
+                    font-size: 15px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: #ff8c00; // Hover effekti
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --- Media Queries --- */
+
+@media (max-width: 768px) {
+    footer .container {
+        // Planshetlarda 2 tadan ustun chiqarish
+        justify-content: flex-start;
+        
+        ul {
+            flex: 1 1 40%; 
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    footer .container {
+        flex-direction: column; // Hammasini ustma-ust tushirish
+        align-items: flex-start;
+        gap: 40px;
+
+        ul {
+            flex: 1 1 100%;
+            width: 100%;
+        }
+    }
+}
